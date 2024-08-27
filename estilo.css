@@ -1,0 +1,31 @@
+:root {
+    --primary-color: hsl(189, 100%, 30%);
+    --accent-color: hsl(189, 100%, 25%);
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+#carrito {
+    position: sticky;
+    top: 20px;
+}
+
+@media (max-width: 768px) {
+    #carrito {
+        position: static;
+    }
+}
