@@ -30,7 +30,7 @@
         "precio": 3200.00,
         "stock": 50,
         "categoria": "Antibióticos",
-        "imagen": "https://ejemplo.com/imagenes/amoxicilina.jpg"
+        "imagen": "/Assets/img/Amoxicilina.jpg"
       },
       {
         "id": 5,
@@ -38,7 +38,7 @@
         "precio": 1700.00,
         "stock": 70,
         "categoria": "Antialérgicos",
-        "imagen": "https://ejemplo.com/imagenes/loratadina.jpg"
+        "imagen": "/Assets/img/Loratadina.jpg"
       },
       {
         "id": 6,
@@ -46,7 +46,7 @@
         "precio": 1300.00,
         "stock": 90,
         "categoria": "Analgésicos",
-        "imagen": "https://ejemplo.com/imagenes/aspirina.jpg"
+        "imagen": "/Assets/img/Aspirina.jpg"
       },
       {
         "id": 7,
@@ -54,7 +54,7 @@
         "precio": 2000.00,
         "stock": 70,
         "categoria": "Antialérgicos",
-        "imagen": "https://ejemplo.com/imagenes/cetirizina.jpg"
+        "imagen": "/Assets/img/Cetirizina.jpg"
       },
       {
         "id": 8,
@@ -62,7 +62,7 @@
         "precio": 2600.00,
         "stock": 40,
         "categoria": "Antidiabéticos",
-        "imagen": "https://ejemplo.com/imagenes/metformina.jpg"
+        "imagen": "/Assets/img/Metformina.jpg"
       },
       {
         "id": 9,
@@ -70,7 +70,7 @@
         "precio": 3800.00,
         "stock": 55,
         "categoria": "Hipolipemiantes",
-        "imagen": "https://ejemplo.com/imagenes/atorvastatina.jpg"
+        "imagen": "/Assets/img/Atorvastatina.jpg"
       },
       {
         "id": 10,
