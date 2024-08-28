@@ -14,21 +14,38 @@
 </head>
 
 <body>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Farmacia Roca</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Carrito <span id="carrito-cantidad" class="badge bg-primary">0</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"
+                            id="carrito-dropdown">
+                            <!-- El contenido del carrito se agregará aquí dinámicamente -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
         <header class="mb-4">
             <h1 class="text-center">Farmacia Roca</h1>
         </header>
         <div id="contenedor-principal" class="row">
-            <main class="col-md-8">
+            <main class="col-12">
                 <section id="productos" class="row" aria-label="Productos disponibles"></section>
             </main>
-            <aside id="carrito" class="col-md-4">
-                <h2 class="text-center mb-3">Carrito de Compras</h2>
-                <ul id="lista-carrito" class="list-group mb-3"></ul>
-                <p id="total-carrito" class="text-end fw-bold"></p>
-                <button id="realizar-compra" class="btn btn-primary w-100 mb-2">Realizar Compra</button>
-                <button id="vaciar-carrito" class="btn btn-danger w-100">Vaciar Carrito</button>
-            </aside>
         </div>
     </div>
     <!-- Bootstrap JS -->

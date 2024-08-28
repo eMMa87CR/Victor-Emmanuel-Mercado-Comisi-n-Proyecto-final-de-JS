@@ -67,28 +67,63 @@ function mostrarProductos() {
 }
 
 function agregarAlCarrito(index) {
-  carrito.agregarProducto(productos[index]);
+  const productoAgregado = productos[index];
+  carrito.agregarProducto(productoAgregado);
   actualizarCarrito();
   guardarCarritoEnLocalStorage();
+
+  // Mostrar cartel de producto agregado
+  Swal.fire({
+    title: '¡Producto agregado!',
+    text: `Se ha agregado ${productoAgregado.nombre} al carrito`,
+    icon: 'success',
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  });
 }
 
 function actualizarCarrito() {
-  const listaCarrito = document.getElementById("lista-carrito");
-  const totalCarrito = document.getElementById("total-carrito");
+  const carritoDropdown = document.getElementById("carrito-dropdown");
+  const carritoCantidad = document.getElementById("carrito-cantidad");
 
-  listaCarrito.innerHTML = "";
+  carritoDropdown.innerHTML = '';
 
-  carrito.productos.forEach((producto) => {
-    const li = document.createElement("li");
-    li.className = "list-group-item d-flex justify-content-between align-items-center";
-    li.innerHTML = `
-      ${producto.nombre} - $${producto.precio} x ${producto.cantidad}
-      <button class="btn btn-sm btn-danger" onclick="eliminarDelCarrito('${producto.nombre}')">Eliminar</button>
+  if (carrito.productos.length === 0) {
+    carritoDropdown.innerHTML = '<li><span class="dropdown-item-text">El carrito está vacío</span></li>';
+  } else {
+    carrito.productos.forEach((producto) => {
+      const dropdownItem = document.createElement("li");
+      dropdownItem.innerHTML = `
+        <div class="dropdown-item-text d-flex justify-content-between align-items-center">
+          <span>${producto.nombre} - $${producto.precio} x ${producto.cantidad}</span>
+          <button class="btn btn-sm btn-danger" onclick="eliminarDelCarrito('${producto.nombre}')">-</button>
+        </div>
+      `;
+      carritoDropdown.appendChild(dropdownItem);
+    });
+
+    const totalItem = document.createElement("li");
+    totalItem.innerHTML = `<div class="dropdown-item-text font-weight-bold">Total: $${carrito.calcularTotal()}</div>`;
+    carritoDropdown.appendChild(totalItem);
+
+    const botonesItem = document.createElement("li");
+    botonesItem.innerHTML = `
+      <div class="dropdown-item-text d-flex justify-content-between">
+        <button class="btn btn-sm btn-primary" onclick="realizarCompra()">Comprar</button>
+        <button class="btn btn-sm btn-danger" onclick="vaciarCarrito()">Vaciar</button>
+      </div>
     `;
-    listaCarrito.appendChild(li);
-  });
+    carritoDropdown.appendChild(botonesItem);
+  }
 
-  totalCarrito.textContent = `Total: $${carrito.calcularTotal()}`;
+  carritoCantidad.textContent = carrito.productos.reduce((total, producto) => total + producto.cantidad, 0);
 }
 
 function eliminarDelCarrito(nombre) {
@@ -185,10 +220,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function agregarEventListeners() {
-  document
-    .getElementById("realizar-compra")
-    .addEventListener("click", realizarCompra);
-  document
-    .getElementById("vaciar-carrito")
-    .addEventListener("click", vaciarCarrito);
+  // Ya no necesitamos estos event listeners
 }
+
+// Eliminar la función cargarCarritoDeLocalStorage() si ya no se necesita
