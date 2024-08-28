@@ -55,10 +55,13 @@ function mostrarProductos() {
     productoElement.className = "col-md-6 col-lg-4 mb-4";
     productoElement.innerHTML = `
       <div class="card h-100">
+        <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
         <div class="card-body">
           <h5 class="card-title">${producto.nombre}</h5>
           <p class="card-text">Precio: $${producto.precio}</p>
-          <button class="btn btn-primary w-100" onclick="agregarAlCarrito(${index})">Agregar al carrito</button>
+          <button class="btn btn-primary w-100" onclick="agregarAlCarrito(${index})">
+            <i class="fas fa-cart-plus"></i> Agregar al carrito
+          </button>
         </div>
       </div>
     `;
@@ -80,7 +83,7 @@ function agregarAlCarrito(index) {
     toast: true,
     position: 'top-end',
     showConfirmButton: false,
-    timer: 3000,
+    timer: 800,
     timerProgressBar: true,
     didOpen: (toast) => {
       toast.addEventListener('mouseenter', Swal.stopTimer)
@@ -103,7 +106,9 @@ function actualizarCarrito() {
       dropdownItem.innerHTML = `
         <div class="dropdown-item-text d-flex justify-content-between align-items-center">
           <span>${producto.nombre} - $${producto.precio} x ${producto.cantidad}</span>
-          <button class="btn btn-sm btn-danger" onclick="eliminarDelCarrito('${producto.nombre}')">-</button>
+          <button class="btn btn-sm btn-danger" onclick="eliminarDelCarrito('${producto.nombre}')">
+            <i class="fas fa-minus"></i>
+          </button>
         </div>
       `;
       carritoDropdown.appendChild(dropdownItem);
@@ -116,8 +121,12 @@ function actualizarCarrito() {
     const botonesItem = document.createElement("li");
     botonesItem.innerHTML = `
       <div class="dropdown-item-text d-flex justify-content-between">
-        <button class="btn btn-sm btn-primary" onclick="realizarCompra()">Comprar</button>
-        <button class="btn btn-sm btn-danger" onclick="vaciarCarrito()">Vaciar</button>
+        <button class="btn btn-sm btn-primary" onclick="realizarCompra()">
+          <i class="fas fa-shopping-bag"></i> Comprar
+        </button>
+        <button class="btn btn-sm btn-danger" onclick="vaciarCarrito()">
+          <i class="fas fa-trash"></i> Vaciar
+        </button>
       </div>
     `;
     carritoDropdown.appendChild(botonesItem);

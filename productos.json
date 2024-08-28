@@ -5,105 +5,120 @@
         "nombre": "Paracetamol",
         "precio": 1500.00,
         "stock": 100,
-        "categoria": "Analgésicos"
+        "categoria": "Analgésicos",
+        "imagen": "/Assets/img/paracetamol tafirol.jpg"
       },
       {
         "id": 2,
         "nombre": "Ibuprofeno",
         "precio": 1800.00,
         "stock": 80,
-        "categoria": "Antiinflamatorios"
+        "categoria": "Antiinflamatorios",
+        "imagen": "/Assets/img/ACTRON IBUPROFENO.jpg"
       },
       {
         "id": 3,
         "nombre": "Omeprazol",
         "precio": 2500.00,
         "stock": 60,
-        "categoria": "Antiácidos"
+        "categoria": "Antiácidos",
+        "imagen": "/Assets/img/Omeprazol.jpg"
       },
       {
         "id": 4,
         "nombre": "Amoxicilina",
         "precio": 3200.00,
         "stock": 50,
-        "categoria": "Antibióticos"
+        "categoria": "Antibióticos",
+        "imagen": "https://ejemplo.com/imagenes/amoxicilina.jpg"
       },
       {
         "id": 5,
         "nombre": "Loratadina",
         "precio": 1700.00,
         "stock": 70,
-        "categoria": "Antialérgicos"
+        "categoria": "Antialérgicos",
+        "imagen": "https://ejemplo.com/imagenes/loratadina.jpg"
       },
       {
         "id": 6,
         "nombre": "Aspirina",
         "precio": 1300.00,
         "stock": 90,
-        "categoria": "Analgésicos"
+        "categoria": "Analgésicos",
+        "imagen": "https://ejemplo.com/imagenes/aspirina.jpg"
       },
       {
         "id": 7,
         "nombre": "Cetirizina",
         "precio": 2000.00,
         "stock": 70,
-        "categoria": "Antialérgicos"
+        "categoria": "Antialérgicos",
+        "imagen": "https://ejemplo.com/imagenes/cetirizina.jpg"
       },
       {
         "id": 8,
         "nombre": "Metformina",
         "precio": 2600.00,
         "stock": 40,
-        "categoria": "Antidiabéticos"
+        "categoria": "Antidiabéticos",
+        "imagen": "https://ejemplo.com/imagenes/metformina.jpg"
       },
       {
         "id": 9,
         "nombre": "Atorvastatina",
         "precio": 3800.00,
         "stock": 55,
-        "categoria": "Hipolipemiantes"
+        "categoria": "Hipolipemiantes",
+        "imagen": "https://ejemplo.com/imagenes/atorvastatina.jpg"
       },
       {
         "id": 10,
         "nombre": "Diclofenaco",
         "precio": 2200.00,
         "stock": 65,
-        "categoria": "Antiinflamatorios"
+        "categoria": "Antiinflamatorios",
+        "imagen": "https://ejemplo.com/imagenes/diclofenaco.jpg"
       },
       {
         "id": 11,
         "nombre": "Losartán",
         "precio": 3500.00,
         "stock": 45,
-        "categoria": "Antihipertensivos"
+        "categoria": "Antihipertensivos",
+        "imagen": "https://ejemplo.com/imagenes/losartan.jpg"
       },
       {
         "id": 12,
         "nombre": "Levotiroxina",
         "precio": 2800.00,
         "stock": 55,
-        "categoria": "Hormonas tiroideas"
+        "categoria": "Hormonas tiroideas",
+        "imagen": "https://ejemplo.com/imagenes/levotiroxina.jpg"
       },
       {
         "id": 13,
         "nombre": "Escitalopram",
         "precio": 4200.00,
         "stock": 30,
-        "categoria": "Antidepresivos"
+        "categoria": "Antidepresivos",
+        "imagen": "https://ejemplo.com/imagenes/escitalopram.jpg"
       },
       {
         "id": 14,
         "nombre": "Salbutamol",
         "precio": 1900.00,
         "stock": 40,
-        "categoria": "Broncodilatadores"
+        "categoria": "Broncodilatadores",
+        "imagen": "https://ejemplo.com/imagenes/salbutamol.jpg"
       },
       {
         "id": 15,
         "nombre": "Metformina",
         "precio": 2600.00,
         "stock": 50,
-        "categoria": "Antidiabéticos"
+        "categoria": "Antidiabéticos",
+        "imagen": "https://ejemplo.com/imagenes/metformina.jpg"
       }
     ]
   }
