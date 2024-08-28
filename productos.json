@@ -78,47 +78,7 @@
         "precio": 2200.00,
         "stock": 65,
         "categoria": "Antiinflamatorios",
-        "imagen": "https://ejemplo.com/imagenes/diclofenaco.jpg"
-      },
-      {
-        "id": 11,
-        "nombre": "Losartán",
-        "precio": 3500.00,
-        "stock": 45,
-        "categoria": "Antihipertensivos",
-        "imagen": "https://ejemplo.com/imagenes/losartan.jpg"
-      },
-      {
-        "id": 12,
-        "nombre": "Levotiroxina",
-        "precio": 2800.00,
-        "stock": 55,
-        "categoria": "Hormonas tiroideas",
-        "imagen": "https://ejemplo.com/imagenes/levotiroxina.jpg"
-      },
-      {
-        "id": 13,
-        "nombre": "Escitalopram",
-        "precio": 4200.00,
-        "stock": 30,
-        "categoria": "Antidepresivos",
-        "imagen": "https://ejemplo.com/imagenes/escitalopram.jpg"
-      },
-      {
-        "id": 14,
-        "nombre": "Salbutamol",
-        "precio": 1900.00,
-        "stock": 40,
-        "categoria": "Broncodilatadores",
-        "imagen": "https://ejemplo.com/imagenes/salbutamol.jpg"
-      },
-      {
-        "id": 15,
-        "nombre": "Metformina",
-        "precio": 2600.00,
-        "stock": 50,
-        "categoria": "Antidiabéticos",
-        "imagen": "https://ejemplo.com/imagenes/metformina.jpg"
+        "imagen": "/Assets/img/Diclofenaco.jpg"
       }
     ]
   }

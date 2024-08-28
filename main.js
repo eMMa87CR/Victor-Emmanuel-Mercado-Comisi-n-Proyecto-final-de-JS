@@ -48,6 +48,11 @@ const carrito = new Carrito();
 
 function mostrarProductos() {
   const productosDiv = document.getElementById("productos");
+  if (!productosDiv) {
+    console.error("El elemento 'productos' no existe en el DOM");
+    return;
+  }
+  
   productosDiv.innerHTML = "<h2 class='col-12 mb-4'>Productos Disponibles</h2>";
 
   productos.forEach((producto, index) => {
@@ -209,24 +214,32 @@ function cargarCarritoDeLocalStorage() {
 let productos = [];
 
 document.addEventListener("DOMContentLoaded", () => {
+  cargarProductos();
+});
+
+function cargarProductos() {
   fetch("productos.json")
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
     .then((data) => {
       productos = data.productos;
       mostrarProductos();
       cargarCarritoDeLocalStorage();
-      agregarEventListeners();
     })
     .catch((error) => {
       console.error("Error al cargar los productos:", error);
       Swal.fire({
         title: 'Error',
-        text: 'Hubo un error al cargar los productos. Por favor, intenta de nuevo más tarde.',
+        text: `Hubo un error al cargar los productos: ${error.message}. Por favor, intenta de nuevo más tarde.`,
         icon: 'error',
         confirmButtonText: 'Aceptar'
       });
     });
-});
+}
 
 function agregarEventListeners() {
   // Ya no necesitamos estos event listeners
