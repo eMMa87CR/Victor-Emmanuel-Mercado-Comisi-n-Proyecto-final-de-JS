@@ -6,7 +6,7 @@
         "precio": 1500.00,
         "stock": 100,
         "categoria": "Analgésicos",
-        "imagen": "./Assets/img/paracetamol tafirol.jpg"
+        "imagen": "/Assets/img/paracetamol-tafirol.jpg"
       },
       {
         "id": 2,
@@ -14,7 +14,7 @@
         "precio": 1800.00,
         "stock": 80,
         "categoria": "Antiinflamatorios",
-        "imagen": "./Assets/img/ACTRON IBUPROFENO.jpg"
+        "imagen": "/Assets/img/ACTRON-IBUPROFENO.jpg"
       },
       {
         "id": 3,
@@ -22,7 +22,7 @@
         "precio": 2500.00,
         "stock": 60,
         "categoria": "Antiácidos",
-        "imagen": "./Assets/img/Omeprazol.jpg"
+        "imagen": "/Assets/img/Omeprazol.jpg"
       },
       {
         "id": 4,
@@ -30,7 +30,7 @@
         "precio": 3200.00,
         "stock": 50,
         "categoria": "Antibióticos",
-        "imagen": "./Assets/img/Amoxicilina.jpg"
+        "imagen": "/Assets/img/Amoxicilina.jpg"
       },
       {
         "id": 5,
@@ -38,7 +38,7 @@
         "precio": 1700.00,
         "stock": 70,
         "categoria": "Antialérgicos",
-        "imagen": "./Assets/img/Loratadina.jpg"
+        "imagen": "/Assets/img/Loratadina.jpg"
       },
       {
         "id": 6,
@@ -46,7 +46,7 @@
         "precio": 1300.00,
         "stock": 90,
         "categoria": "Analgésicos",
-        "imagen": "./Assets/img/Aspirina.jpg"
+        "imagen": "/Assets/img/Aspirina.jpg"
       },
       {
         "id": 7,
@@ -54,7 +54,7 @@
         "precio": 2000.00,
         "stock": 70,
         "categoria": "Antialérgicos",
-        "imagen": "./Assets/img/Cetirizina.jpg"
+        "imagen": "/Assets/img/Cetirizina.jpg"
       },
       {
         "id": 8,
@@ -62,7 +62,7 @@
         "precio": 2600.00,
         "stock": 40,
         "categoria": "Antidiabéticos",
-        "imagen": "./Assets/img/Metformina.jpg"
+        "imagen": "/Assets/img/Metformina.jpg"
       },
       {
         "id": 9,
@@ -70,7 +70,7 @@
         "precio": 3800.00,
         "stock": 55,
         "categoria": "Hipolipemiantes",
-        "imagen": "./Assets/img/Atorvastatina.jpg"
+        "imagen": "/Assets/img/Atorvastatina.jpg"
       },
       {
         "id": 10,
